@@ -5,7 +5,7 @@
 */
 
 import Foundation
-import Ink
+import walkInk
 
 let arguments = CommandLine.arguments
 

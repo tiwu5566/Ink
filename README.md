@@ -22,7 +22,7 @@ Ink is used to render all articles on [swiftbysundell.com](https://swiftbysundel
 To get started with Ink, all you have to do is to import it, and use its `MarkdownParser` type to convert any Markdown string into efficiently rendered HTML:
 
 ```swift
-import Ink
+import walkInk
 
 let markdown: String = ...
 let parser = MarkdownParser()
@@ -107,10 +107,10 @@ let package = Package(
 )
 ```
 
-Then import Ink wherever you’d like to use it:
+Then import walkInk wherever you’d like to use it:
 
 ```swift
-import Ink
+import walkInk
 ```
 
 For more information on how to use the Swift Package Manager, check out [this article](https://www.swiftbysundell.com/articles/managing-dependencies-using-the-swift-package-manager), or [its official documentation](https://github.com/apple/swift-package-manager/tree/master/Documentation).

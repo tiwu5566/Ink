@@ -44,6 +44,7 @@ public extension Modifier {
         case metadataValues
         case blockquotes
         case codeBlocks
+        case footnotes
         case headings
         case horizontalLines
         case html

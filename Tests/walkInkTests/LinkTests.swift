@@ -5,7 +5,7 @@
 */
 
 import XCTest
-import Ink
+import walkInk
 
 final class LinkTests: XCTestCase {
     func testLinkWithURL() {
