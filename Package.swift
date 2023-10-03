@@ -9,14 +9,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "Ink",
+    name: "walkInk",
     products: [
-        .library(name: "Ink", targets: ["Ink"]),
-        .executable(name: "ink-cli", targets: ["InkCLI"])
+        .library(name: "walkInk", targets: ["walkInk"]),
+        .executable(name: "walkInk-cli", targets: ["walkInkCLI"])
     ],
     targets: [
-        .target(name: "Ink"),
-        .target(name: "InkCLI", dependencies: ["Ink"]),
-        .testTarget(name: "InkTests", dependencies: ["Ink"])
+        .target(name: "walkInk"),
+        .target(name: "walkInkCLI", dependencies: ["walkInk"]),
+        .testTarget(name: "walkInkTests", dependencies: ["walkInk"])
     ]
 )
