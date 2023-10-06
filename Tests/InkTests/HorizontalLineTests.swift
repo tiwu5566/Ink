@@ -5,7 +5,7 @@
 */
 
 import XCTest
-import walkInk
+import Ink
 
 final class HorizontalLineTests: XCTestCase {
     func testHorizonalLineWithDashes() {

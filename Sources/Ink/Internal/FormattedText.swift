@@ -108,9 +108,7 @@ private extension FormattedText {
                         guard let nextCharacter = reader.nextCharacter else {
                             break
                         }
-                        
-                        print(nextCharacter)
-                        
+                                                
                         guard reader.previousCharacter != "\\" && sequentialSpaceCount < 2 else {
                             text.components.append(.linebreak)
                             skipCharacter()
@@ -335,7 +333,9 @@ private extension FormattedText {
             case "`": return InlineCode.self
             case "[": if reader.nextCharacter == "^" {
                     return Footnote.self
-                } else { return Link.self }
+                } else {
+                    return Link.self
+                }
             case "!": return Image.self
             case "<": return HTML.self
             default: return nil

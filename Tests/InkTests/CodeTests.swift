@@ -5,7 +5,7 @@
 */
 
 import XCTest
-import walkInk
+import Ink
 
 final class CodeTests: XCTestCase {
     func testInlineCode() {

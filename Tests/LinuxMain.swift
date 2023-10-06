@@ -5,7 +5,7 @@
 */
 
 import XCTest
-import walkInk
+import Ink
 
 var tests = [XCTestCaseEntry]()
 tests += InkTests.allTests()

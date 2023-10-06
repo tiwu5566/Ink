@@ -5,7 +5,7 @@
 */
 
 import XCTest
-import walkInk
+import Ink
 
 final class ImageTests: XCTestCase {
     func testImageWithURL() {
