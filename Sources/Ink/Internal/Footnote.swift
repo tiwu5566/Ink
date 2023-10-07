@@ -22,9 +22,9 @@ internal struct Footnote: Fragment {
         let safeUrl = url.replacingOccurrences(of: " ", with: "_")
         
         if style == .inline {
-            return "<span id=\"fnref_\(safeUrl)\" class=\"fnref\"><a href=\"#fn_\(safeUrl)\">\(url)</a></span>"
+            return "<a href=\"#fn_\(safeUrl)\"><span id=\"fnref_\(safeUrl)\" class=\"fnref\">\(url)</span></a>"
         } else {
-            return "<sup id=\"fnref_\(safeUrl)\" class=\"fnref\"><a href=\"#fn_\(safeUrl)\">\(url)</a></sup>"
+            return "<a href=\"#fn_\(safeUrl)\"><sup id=\"fnref_\(safeUrl)\" class=\"fnref\">\(url)</sup></a>"
         }
     }
 
